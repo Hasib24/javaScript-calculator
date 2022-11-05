@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --button_bg_color : #fff;
+    --button_bg_secondary_color : #1111;
+    --border_radious : 15px
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.calculator{
+    /* border: 1px solid; */
+    margin-top: 100px;
+    border-radius: var(--border_radious);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    
+    
+}
+.display{
+    display:flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 100%;
+
+    height: 100px;
+    padding: 5px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.row1, .row2, .row3, .row4, .row5{
+    cursor: pointer;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--button_bg_secondary_color);
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    background-color: var(--button_bg_color);
+}
+
+.row1, .right_btn{
+    background-color: var(--button_bg_secondary_color);
+}
+.btn:hover{
+    background-color: var(--button_bg_secondary_color);
+}
+.row5:nth-child(1){
+    border-radius: 0 0 0 var(--border_radious);
+}
+.row5:nth-last-child(1){
+    border-radius: 0 0 var(--border_radious) 0;
+}

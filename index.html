@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <!-- <p>565327</p> -->
+                <!-- <h2>23463290430</h2> -->
+            </div>
+            <div class="keypad">
+                <div class="keypad-row1-container">
+                <button class="row1 btn" onclick="hasibDelete()">AC</button><!--
+                --><button class="row1 btn" onclick="calcWrite()">+/-</button><!--
+                --><button class="row1 btn" onclick="calcWrite()">%</button><!--
+                --><button class="row1 btn" >/</button>
+                </div>
+                <div class="keypad-row2-container">
+                    <button class="row2 btn" value="7" onclick="calcWrite('7')">7</button><!--
+                --><button class="row2 btn" value="8" onclick="calcWrite('8')">8</button><!--
+                --><button class="row2 btn" value="9" onclick="calcWrite('9')">9</button><!--
+                --><button class="row2 btn right_btn" onclick="calcWrite('*')">*</button>
+                </div>
+                <div class="keypad-row3-container">
+                    <button class="row3 btn" value="4" onclick="calcWrite('4')">4</button><!--
+                    --><button class="row3 btn" value="5" onclick="calcWrite('5')">5</button><!--
+                    --><button class="row3 btn" value="6" onclick="calcWrite('6')">6</button><!--
+                    --><button class="row3 btn right_btn" value="" onclick="calcWrite('-')">-</button>
+                </div>
+                <div class="keypad-row4-container">
+                    <button class="row4 btn" value="1" onclick="calcWrite('6')">1</button><!--
+                    --><button class="row4 btn" value="2" onclick="calcWrite('2')">2</button><!--
+                    --><button class="row4 btn" value="3" onclick="calcWrite('3')">3</button><!--
+                    --><button class="row4 btn right_btn" value="" onclick="calcWrite('+')">+</button>
+                </div>
+                <div class="keypad-row5-container">
+                    <button class="row5 btn" value="0" onclick="calcWrite('0')">0</button><!--
+                    --><button class="row5 btn" value="" onclick="calcWrite('.')">.</button><!--
+                    --><button class="row5 btn" value="" onclick="hasibDelete()">DEL</button<!--
+                    --><button class="row5 btn right_btn" value="" onclick="hasibDelete()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
