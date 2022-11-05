@@ -2,11 +2,15 @@
 var disp = document.querySelectorAll('.display')[0];
 
 function calcWrite(btnvalue){
-    
     disp.textContent += btnvalue;
-    console.log(disp.textContent)
 };
 
 function hasibDelete(){
-    disp.textContent = "0";
+    disp.textContent = "";
+}
+
+function doit(){
+    var result = eval(disp.textContent);
+    disp.textContent = result;
+    console.log("value is " + result)
 }
