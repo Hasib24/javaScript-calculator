@@ -17,12 +17,24 @@
 body{
     display: flex;
     justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
+.hasib.nightMood{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .calculator{
     /* border: 1px solid; */
     margin-top: 100px;
     border-radius: var(--border_radious);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    
+    
+}
+.calculator.nightMood{
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
     
     
 }
@@ -36,7 +48,33 @@ body{
     padding: 5px;
     align-items: flex-end;
     justify-content: flex-end;
+    position: relative;   
 }
+.blankDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+    /* background-color: black; */
+    background-image: url(img/moon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.blankDiv.active{
+    background-image: url(img/sun.png);
+    filter: invert(1);
+
+}
+
+.btn.nightMood{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 
 .row1, .row2, .row3, .row4, .row5{
     cursor: pointer;
